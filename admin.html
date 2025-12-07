@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LuxeRadiant Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Admin Login</h2>
+    <input type="password" id="adminPass" placeholder="Enter password" />
+    <button id="loginBtn">Login</button>
+    <p id="loginMsg" style="color:red;"></p>
+  </div>
+
+  <div id="admin-panel" style="display:none;">
+    <h1>LuxeRadiant — Orders & Contacts</h1>
+    <div class="controls">
+      <button id="refresh" class="btn primary">Refresh</button>
+      <button id="download" class="btn ghost">Download CSV</button>
+      <button id="logout" class="btn ghost">Logout</button>
+    </div>
+
+    <div id="ordersSection">
+      <h2>Orders</h2>
+      <div id="ordersTable">Loading orders...</div>
+    </div>
+
+    <div id="contactsSection" style="margin-top:40px;">
+      <h2>Contact Messages</h2>
+      <div id="contactsTable">Loading contacts...</div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

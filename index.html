@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LuxeRadiant — Radiant Collection</title>
+  <meta name="description" content="LuxeRadiant — premium cosmetics demo.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP NAV -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="LuxeRadiant home">
+        <span class="mark" aria-hidden="true">L</span>
+        <span class="brand-text">
+          <span class="brand-name">LuxeRadiant</span>
+          <small class="brand-sub">Radiant Cosmetics</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#featured">Featured</a>
+        <a href="#best">Best Sellers</a>
+        <a href="#new">New</a>
+        <a href="#tips">Tips</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="top-actions">
+        <button class="icon-circle" id="cartBtn" aria-label="Cart">🛒 <span id="cartCount">0</span></button>
+        <button class="btn small primary" id="orderNowTop">Order Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Limited Edition</p>
+          <h1 class="hero-title">Radiant Glow Collection</h1>
+          <p class="hero-lead">Lightweight formulas • High pigment • Everyday luxury</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#featured">Shop Featured</a>
+            <button class="btn outline" id="openOrder">Order Now</button>
+          </div>
+          <div class="hero-badges">Vegan • Cruelty-free • Dermatologist tested</div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="visual-layer">
+            <img src="https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg" class="v1" alt="product main">
+            <img src="https://mamaearth.in/blog/wp-content/uploads/2023/02/unnamed-2023-02-22T115443.590-min-1-min.webp" class="v2" alt="lipstick">
+            <img src="https://marscosmetics.in/cdn/shop/products/5-2.jpg?v=1638453886&width=1400" class="v3" alt="compact">
+            <div class="float-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section id="featured" class="section soft">
+      <div class="container">
+        <h2 class="section-title reveal">Featured Products</h2>
+        <p class="section-desc reveal">Our editors’ picks — hand-selected for glow.</p>
+
+        <div class="card-grid">
+          <!-- 9 featured products -->
+          <!-- Each article has data attributes for quickview/order -->
+          <article class="product-card reveal" data-name="Luminous Serum Tint" data-price="₹2499" data-img="https://images.unsplash.com/photo-1520975918318-3be2840b30df?auto=format&fit=crop&w=800&q=80">
+            <div class="p-thumb"><img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:540/1127907/UcYR3EO4w-8901030971112_1.jpg" alt=""></div>
+            <div class="p-body">
+              <h3>Luminous Serum Tint</h3>
+              <p class="muted">Hydrating tint for dewy coverage</p>
+              <div class="price">₹2499</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Velvet Matte Lip" data-price="₹999" data-img="https://m.media-amazon.com/images/I/417QBZS1WdL._SY450_.jpg">
+            <div class="p-thumb"><img src="https://m.media-amazon.com/images/I/417QBZS1WdL._SY450_.jpg" alt=""></div>
+            <div class="p-body">
+              <h3>Velvet Matte Lip</h3>
+              <p class="muted">Long-wear creamy matte</p>
+              <div class="price">₹999</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Glow Highlighter" data-price="₹799" data-img="https://www.lakmeindia.com/cdn/shop/files/29728_S2-8901030984587_1000x.jpg?v=1734940525">
+            <div class="p-thumb"><img src="https://www.lakmeindia.com/cdn/shop/files/29728_S1-8901030984587_1000x.jpg?v=1734506616" alt=""></div>
+            <div class="p-body">
+              <h3>Glow Highlighter</h3>
+              <p class="muted">Buildable luminosity</p>
+              <div class="price">₹799</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Silk Compact" data-price="₹1299" data-img="https://www.newedition.mv/wp-content/uploads/2020/09/luminous-powder.jpg">
+            <div class="p-thumb"><img src="https://www.newedition.mv/wp-content/uploads/2020/09/luminous-powder.jpg" alt=""></div>
+            <div class="p-body">
+              <h3>Silk Compact</h3>
+              <p class="muted">Matte finish, soft touch</p>
+              <div class="price">₹1299</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Hydra Primer" data-price="₹699" data-img="https://images-static.nykaa.com/media/catalog/product/d/6/d65e2dcMARSX00001039-new_1.jpg">
+            <div class="p-thumb"><img src="https://images-static.nykaa.com/media/catalog/product/d/6/d65e2dcMARSX00001039-new_1.jpg" alt=""></div>
+            <div class="p-body">
+              <h3>Hydra Primer</h3>
+              <p class="muted">Dewy base for makeup longevity</p>
+              <div class="price">₹699</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Velvet Eye Palette" data-price="₹1799" data-img="https://m.media-amazon.com/images/I/81li0dMrmDL._SY450_.jpg">
+            <div class="p-thumb"><img src="https://m.media-amazon.com/images/I/81li0dMrmDL._SY450_.jpg" alt=""></div>
+            <div class="p-body">
+              <h3>Velvet Eye Palette</h3>
+              <p class="muted">Rich pigments, silky blends</p>
+              <div class="price">₹1799</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Tinted Sunscreen" data-price="₹899" data-img="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/352956/lakme-sun-expert-tinted-sunscreen-50-spf-100-ml_1_display_1707130966_f3bb063a.jpg">
+            <div class="p-thumb"><img src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2/static/img/product/352956/lakme-sun-expert-tinted-sunscreen-50-spf-100-ml_1_display_1707130966_f3bb063a.jpg" alt=""></div>
+            <div class="p-body">
+              <h3>Tinted Sunscreen</h3>
+              <p class="muted">SPF 50 with tint</p>
+              <div class="price">₹899</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Nourish Night Crème" data-price="₹1299" data-img="https://www.lakmeindia.com/cdn/shop/files/22749_H-8901030954696_1000x.jpg?v=1702537729">
+            <div class="p-thumb"><img src="https://www.lakmeindia.com/cdn/shop/files/22749_H-8901030954696_1000x.jpg?v=1702537729" alt=""></div>
+            <div class="p-body">
+              <h3>Nourish Night Crème</h3>
+              <p class="muted">Repair & glow overnight</p>
+              <div class="price">₹1299</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-name="Sheer Gloss" data-price="₹499" data-img="https://images.unsplash.com/photo-1508144753684-1d0c0b6c6f5b?auto=format&fit=crop&w=800&q=80">
+            <div class="p-thumb"><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVHM_a-W9on3hcQqMpqujBQr6LJonu7ys5VbnCVwoINgyq6_tMEi5mODK5ruvYqxJYeWWx7W3mK6a7eN5vCnm_T7pTQlMY9NS8uKrjcW3W6XxyjPs2SYXf" alt=""></div>
+            <div class="p-body">
+              <h3>Sheer Gloss</h3>
+              <p class="muted">Subtle shine & hydration</p>
+              <div class="price">₹499</div>
+              <div class="p-actions">
+                <button class="btn small ghost quickview">Quick view</button>
+                <button class="btn small primary order">Order</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section id="best" class="section">
+      <div class="container">
+        <p class="eyebrow centered reveal">Editor Picks</p>
+        <h2 class="section-title centered reveal">Best Sellers</h2>
+
+        <div class="product-grid">
+          <article class="product-card slim reveal" data-name="Silk Compact" data-price="₹1299" data-img="https://www.newedition.mv/wp-content/uploads/2020/09/luminous-powder.jpg">
+            <div class="p-thumb"><img src="https://www.newedition.mv/wp-content/uploads/2020/09/luminous-powder.jpg" alt=""></div>
+            <h3>Silk Compact</h3>
+            <div class="price">₹1299</div>
+            <div class="p-actions">
+              <button class="btn small ghost quickview">Quick view</button>
+              <button class="btn small primary order">Order</button>
+            </div>
+          </article>
+
+          <article class="product-card slim reveal" data-name="Velvet Eye Palette" data-price="₹1799" data-img="https://m.media-amazon.com/images/I/81li0dMrmDL._SY450_.jpg">
+            <div class="p-thumb"><img src="https://m.media-amazon.com/images/I/81li0dMrmDL._SY450_.jpg" alt=""></div>
+            <h3>Velvet Eye Palette</h3>
+            <div class="price">₹1799</div>
+            <div class="p-actions">
+              <button class="btn small ghost quickview">Quick view</button>
+              <button class="btn small primary order">Order</button>
+            </div>
+          </article>
+
+          <article class="product-card slim reveal" data-name="Hydra Primer" data-price="₹699" data-img="https://images-static.nykaa.com/media/catalog/product/d/6/d65e2dcMARSX00001039-new_1.jpg">
+            <div class="p-thumb"><img src="https://images-static.nykaa.com/media/catalog/product/d/6/d65e2dcMARSX00001039-new_1.jpg" alt=""></div>
+            <h3>Hydra Primer</h3>
+            <div class="price">₹699</div>
+            <div class="p-actions">
+              <button class="btn small ghost quickview">Quick view</button>
+              <button class="btn small primary order">Order</button>
+            </div>
+          </article>
+
+          <article class="product-card slim reveal" data-name="Radiant Tint Serum" data-price="₹2499" data-img="https://m.media-amazon.com/images/I/41YaPPmaDkL._SL1000_.jpg">
+            <div class="p-thumb"><img src="https://m.media-amazon.com/images/I/41YaPPmaDkL._SL1000_.jpg" alt=""></div>
+            <h3>Radiant Tint Serum</h3>
+            <div class="price">₹2499</div>
+            <div class="p-actions">
+              <button class="btn small ghost quickview">Quick view</button>
+              <button class="btn small primary order">Order</button>
+            </div>
+          </article>
+
+          <article class="product-card slim reveal" data-name="Velvet Matte Lip" data-price="₹999" data-img="https://m.media-amazon.com/images/I/417QBZS1WdL._SY450_.jpg">
+            <div class="p-thumb"><img src="https://m.media-amazon.com/images/I/417QBZS1WdL._SY450_.jpg" alt=""></div>
+            <h3>Velvet Matte Lip</h3>
+            <div class="price">₹999</div>
+            <div class="p-actions">
+              <button class="btn small ghost quickview">Quick view</button>
+              <button class="btn small primary order">Order</button>
+            </div>
+          </article>
+
+          <article class="product-card slim reveal" data-name="Glow Highlighter" data-price="₹799" data-img="https://www.lakmeindia.com/cdn/shop/files/29728_S1-8901030984587_1000x.jpg?v=1734506616">
+            <div class="p-thumb"><img src="https://www.lakmeindia.com/cdn/shop/files/29728_S1-8901030984587_1000x.jpg?v=1734506616" alt=""></div>
+            <h3>Glow Highlighter</h3>
+            <div class="price">₹799</div>
+            <div class="p-actions">
+              <button class="btn small ghost quickview">Quick view</button>
+              <button class="btn small primary order">Order</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS (carousel) -->
+    <section id="new" class="section soft">
+      <div class="container">
+        <h2 class="section-title reveal">New Arrivals</h2>
+        <div class="carousel reveal" id="newCarousel" tabindex="0" aria-label="New arrivals carousel">
+          <div class="carousel-track">
+            <figure class="new-card"><img src="https://pimg.us.marykaycdn.com/HeroZoom/10001/mary-kay-unlimited-lip-gloss-sheer-illusion-open.jpg" alt=""><figcaption>Sheer Gloss • ₹499</figcaption></figure>
+            <figure class="new-card"><img src="https://www.cosmeticosalamoda.com/cdn/shop/products/LAG_velvet_contour_GCS585_1024x1024-skw39716306298011630629801_223736fe-34cc-4b0f-b853-c2fe8193ea14.png?v=1657243040&width=1024" alt=""><figcaption>Velvet Blush • ₹699</figcaption></figure>
+            <figure class="new-card"><img src="https://au.pixibeauty.com/cdn/shop/files/Glow_Mist_-_80ml_-_25JUL23_-_CloseLid-web_large.jpg?v=1718391201" alt=""><figcaption>Glow Mist • ₹599</figcaption></figure>
+            <figure class="new-card"><img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/2029034/2023/4/4/84195ac4-ffe9-4ea9-9e9c-c900e80d04e61680583556892LakmeAbsoluteArganOilSPF45SerumFoundation-RoseSilk15ml1.jpg" alt=""><figcaption>Silk Serum • ₹1299</figcaption></figure>
+            <figure class="new-card"><img src="https://www.urbanbeauty.pk/cdn/shop/files/MissRoseLipTintq_2048x.jpg?v=1731501609" alt=""><figcaption>Rose Lip Tint • ₹399</figcaption></figure>
+            
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous">‹</button>
+          <button class="carousel-btn next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPS -->
+    <section id="tips" class="section">
+      <div class="container two-col">
+        <div class="reveal">
+          <h2 class="section-title">Makeup Tips</h2>
+          <p class="section-desc">Simple tips users love to save & share.</p>
+
+          <div class="tips-grid">
+            <div class="tip-card reveal">
+              <h4>Prep with Hydration</h4>
+              <p>Use a hydrating primer for longwear and a luminous base.</p>
+            </div>
+
+            <div class="tip-card reveal">
+              <h4>Layer Lightly</h4>
+              <p>Apply thin layers of tint to build coverage without heaviness.</p>
+            </div>
+
+            <div class="tip-card reveal">
+              <h4>Target Highlight</h4>
+              <p>Tap highlighter on cheekbones, bridge of nose, and cupid’s bow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal tips-img-wrap">
+          <img class="tips-img" src="https://www.anastasiabeverlyhills.com/cdn/shop/files/ABH_120325_Holiday-Collection_HP-DT.jpg?v=1764616653&width=1440" alt="tips">
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section soft">
+      <div class="container">
+        <h2 class="section-title reveal">Customer Reviews</h2>
+
+        <div class="reviews-wrap reveal">
+          <div class="reviews-slider" id="reviewsSlider" aria-live="polite">
+            <blockquote class="review">
+              <p>“Absolutely love the serum tint — natural glow, no heavy feel.”</p>
+              <footer>— Ananya</footer>
+            </blockquote>
+
+            <blockquote class="review">
+              <p>“Velvet Matte lasts all day and doesn't dry my lips.”</p>
+              <footer>— Priya</footer>
+            </blockquote>
+
+            <blockquote class="review">
+              <p>“Fast delivery and lovely packaging — would reorder!”</p>
+              <footer>— Riya</footer>
+            </blockquote>
+
+            <blockquote class="review">
+              <p>“Amazing finish, friends ask what I'm wearing!”</p>
+              <footer>— Sneha</footer>
+            </blockquote>
+
+            <blockquote class="review">
+              <p>“Perfect for sensitive skin, no irritation.”</p>
+              <footer>— Kavya</footer>
+            </blockquote>
+
+            <blockquote class="review">
+              <p>“Pigments are so rich — one swipe is enough.”</p>
+              <footer>— Meera</footer>
+            </blockquote>
+
+            <blockquote class="review">
+              <p>“Customer support was quick and helpful.”</p>
+              <footer>— Shreya</footer>
+            </blockquote>
+
+            <blockquote class="review">
+              <p>“Packaging looks premium — gifted it to my sister.”</p>
+              <footer>— Nisha</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="reveal">
+          <h2 class="section-title">About LuxeRadiant</h2>
+          <p class="section-desc">LuxeRadiant blends skincare science and makeup artistry. We craft clean, effective formulas that feel luxurious and perform all day.</p>
+
+          <ul class="about-list">
+            <li><strong>Mission:</strong> Confident skin, every day.</li>
+            <li><strong>Values:</strong> Clean ingredients, cruelty-free, eco-aware packaging.</li>
+            <li><strong>Ships:</strong> Across India — bulk & reseller inquiries welcome.</li>
+          </ul>
+        </div>
+
+        <div class="reveal about-stats">
+          <div class="stat"><strong>5k+</strong><span>Happy customers</span></div>
+          <div class="stat"><strong>120+</strong><span>SKUs</span></div>
+          <div class="stat"><strong>99%</strong><span>Positive feedback</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section soft">
+      <div class="container">
+        <h2 class="section-title reveal">Contact & Orders</h2>
+        <p class="section-desc reveal">Want to order or request bulk pricing? Fill the form or use WhatsApp/call.</p>
+
+        <div class="contact-grid reveal">
+          <form id="contactForm" class="contact-form" aria-label="Contact form">
+            <label>
+              Your name
+              <input type="text" id="name" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" id="email" required>
+            </label>
+
+            <label>
+              Message / Order details
+              <textarea id="message" rows="4" placeholder="Product name, shade, quantity, city..."></textarea>
+            </label>
+
+            <div class="form-row">
+              <button class="btn primary" type="submit">Send Message</button>
+              <button class="btn ghost" type="button" id="contactReset">Reset</button>
+            </div>
+
+            <p class="small muted">This demo opens your email client to send the message (mailto fallback).</p>
+            <div id="contactFeedback" class="feedback" aria-live="polite"></div>
+          </form>
+
+          <aside class="contact-info">
+            <h3>Order Hotline</h3>
+            <p><strong>WhatsApp / Call:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> orders@luxeradiant.example (demo)</p>
+            <div class="mini-cta">
+              <button class="btn primary" id="phoneOrder">Order via WhatsApp</button>
+            </div>
+            <div class="map" aria-hidden="true">📍 Ships across India</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>LuxeRadiant</strong>
+        <p class="muted small">Premium cosmetics — demo portfolio site</p>
+      </div>
+      <div class="small muted">© 2025 LuxeRadiant</div>
+    </div>
+  </footer>
+
+  <!-- QUICKVIEW / ORDER MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Close">✕</button>
+
+      <div class="modal-grid">
+        <div class="modal-img"><img src="" id="modalImg" alt=""></div>
+        <div class="modal-details">
+          <h2 id="modalTitle">Product</h2>
+          <p id="modalPrice" class="price">₹0</p>
+          <p id="modalDesc" class="muted">Premium product — demo description.</p>
+
+          <form id="orderForm" class="order-form">
+            <label>
+              Your name
+              <input type="text" id="orderName" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" id="orderEmail" required>
+            </label>
+
+            <label>
+              Quantity
+              <input type="number" id="orderQty" value="1" min="1" required>
+            </label>
+
+            <label>
+              Message (shade / city)
+              <input type="text" id="orderMsg" placeholder="Shade / color / city">
+            </label>
+
+            <div class="form-row">
+              <button class="btn primary" type="submit">Send Order</button>
+              <button class="btn ghost" type="button" id="modalCancel">Cancel</button>
+            </div>
+
+            <div id="orderFeedback" class="feedback" aria-live="polite"></div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
